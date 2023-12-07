@@ -1,3 +1,10 @@
+## [1.1.1-next.2](https://github.com/technologiestiftung/renovate-config/compare/v1.1.1-next.1...v1.1.1-next.2) (2023-12-07)
+
+
+### Bug Fixes
+
+* Constrain schedule even more ([be93eb0](https://github.com/technologiestiftung/renovate-config/commit/be93eb0531e3aff11a3dab5f8a252ab7db9cdb35))
+
 ## [1.1.1-next.1](https://github.com/technologiestiftung/renovate-config/compare/v1.1.0...v1.1.1-next.1) (2023-12-07)
 
 

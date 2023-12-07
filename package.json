@@ -1,6 +1,6 @@
 {
 	"name": "@technologiestiftung/renovate-config",
-	"version": "1.1.1-next.1",
+	"version": "1.1.1-next.2",
 	"description": "shareable renovate config",
 	"scripts": {
 		"validate": "renovate-config-validator",
