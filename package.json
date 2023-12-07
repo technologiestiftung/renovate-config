@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inpyjamas/renovate-config.git"
+    "url": "git+https://github.com/technologiestiftung/renovate-config.git"
   },
   "author": "Fabian Morón Zirfas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/inpyjamas/renovate-config/issues"
+    "url": "https://github.com/technologiestiftung/renovate-config/issues"
   },
-  "homepage": "https://github.com/inpyjamas/renovate-config#readme",
+  "homepage": "https://github.com/technologiestiftung/renovate-config#readme",
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/commit-analyzer": "9.0.2",
