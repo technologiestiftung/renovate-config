@@ -20,7 +20,7 @@
 		"@technologiestiftung/semantic-release-config": "1.2.4",
 		"cz-conventional-changelog": "3.3.0",
 		"prettier": "3.1.0",
-		"renovate": "32.6.5"
+		"renovate": "37.89.2"
 	},
 	"renovate-config": {
 		"default": {
