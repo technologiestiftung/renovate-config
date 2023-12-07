@@ -7,8 +7,17 @@
 	"automergeType": "branch",
 	"packageRules": [
 		{
+			"groupName": "dependencies-major",
+			"semanticCommitScope": "deps",
+			"semanticCommitType": "chore",
+			"automerge": false,
+			"matchDepTypes": ["dependencies"],
+			"matchUpdateTypes": ["major"]
+		},
+		{
 			"groupName": "dependencies-non-major",
-			"semanticCommitType": "deps",
+			"semanticCommitScope": "deps",
+			"semanticCommitType": "chore",
 			"automerge": false,
 			"matchDepTypes": ["dependencies"],
 			"matchUpdateTypes": [
