@@ -2,6 +2,8 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Node.js CI
+permissions:
+  contents: write
 on:
   push:
     branches: [master, next]
@@ -55,16 +57,3 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
         run: npx semantic-release
-  # publish-gpr:
-  #   needs: release
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 12
-  #         registry-url: https://npm.pkg.github.com/
-  #     - run: npm ci
-  #     - run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
