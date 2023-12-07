@@ -1,3 +1,10 @@
+## [1.1.1-next.1](https://github.com/technologiestiftung/renovate-config/compare/v1.1.0...v1.1.1-next.1) (2023-12-07)
+
+
+### Bug Fixes
+
+* Add missing group for major deps ([46c05ba](https://github.com/technologiestiftung/renovate-config/commit/46c05ba4a7ca6e0c8f479e3ab3be980c1442d887))
+
 # [1.1.0](https://github.com/technologiestiftung/renovate-config/compare/v1.0.1...v1.1.0) (2023-12-07)
 
 
