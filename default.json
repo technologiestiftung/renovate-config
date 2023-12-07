@@ -1,39 +1,51 @@
 {
-  "extends": ["config:base", "group:monorepos", ":ignoreModulesAndTests"],
-  "schedule": ["every 2 weeks on Monday before 7am"],
-  "timezone": "Europe/Berlin",
-  "semanticCommits": "enabled",
-  "lockFileMaintenance": { "enabled": false },
-  "automergeType": "branch",
-  "packageRules": [
-    {
-      "groupName": "renovate-meta",
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps",
-      "matchUpdateTypes": ["lockFileMaintenance", "pin"]
-    },
-    {
-      "groupName": "dependencies-non-major",
-      "semanticCommitType": "deps",
-      "automerge": false,
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["patch", "minor"]
-    },
-    {
-      "groupName": "devDependencies-major",
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps",
-      "automerge": false,
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["major"]
-    },
-    {
-      "groupName": "devDependencies-non-major",
-      "automerge": true,
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps",
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch", "minor"]
-    }
-  ]
+	"extends": ["config:base", "group:monorepos", ":ignoreModulesAndTests"],
+	"schedule": ["every 2 weeks on Monday before 7am"],
+	"timezone": "Europe/Berlin",
+	"semanticCommits": "enabled",
+	"lockFileMaintenance": { "enabled": false },
+	"automergeType": "branch",
+	"packageRules": [
+		{
+			"groupName": "dependencies-non-major",
+			"semanticCommitType": "deps",
+			"automerge": false,
+			"matchDepTypes": ["dependencies"],
+			"matchUpdateTypes": [
+				"minor",
+				"patch",
+				"pin",
+				"pinDigest",
+				"digest",
+				"lockFileMaintenance",
+				"rollback",
+				"bump"
+			]
+		},
+		{
+			"groupName": "devDependencies-major",
+			"semanticCommitType": "chore",
+			"semanticCommitScope": "deps",
+			"automerge": false,
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["major"]
+		},
+		{
+			"groupName": "devDependencies-non-major",
+			"automerge": true,
+			"semanticCommitType": "chore",
+			"semanticCommitScope": "deps",
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": [
+				"minor",
+				"patch",
+				"pin",
+				"pinDigest",
+				"digest",
+				"lockFileMaintenance",
+				"rollback",
+				"bump"
+			]
+		}
+	]
 }

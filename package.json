@@ -1,40 +1,44 @@
 {
-  "name": "@technologiestiftung/renovate-config",
-  "version": "1.0.1",
-  "description": "shareable renovate config",
-  "scripts": {
-    "validate": "renovate-config-validator",
-    "test": "npm run validate"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inpyjamas/renovate-config.git"
-  },
-  "author": "Fabian Morón Zirfas",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/inpyjamas/renovate-config/issues"
-  },
-  "homepage": "https://github.com/inpyjamas/renovate-config#readme",
-  "devDependencies": {
-    "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/commit-analyzer": "9.0.2",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/npm": "9.0.1",
-    "@semantic-release/release-notes-generator": "10.0.3",
-    "cz-conventional-changelog": "3.3.0",
-    "renovate": "32.6.5"
-  },
-  "renovate-config": {
-    "default": {
-      "extends": [
-        "github>technologiestiftung/renovate-config"
-      ]
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+	"name": "@technologiestiftung/renovate-config",
+	"version": "1.0.1",
+	"description": "shareable renovate config",
+	"scripts": {
+		"validate": "renovate-config-validator",
+		"test": "npm run validate"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/technologiestiftung/renovate-config.git"
+	},
+	"author": "Fabian Morón Zirfas",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/technologiestiftung/renovate-config/issues"
+	},
+	"homepage": "https://github.com/technologiestiftung/renovate-config#readme",
+	"devDependencies": {
+		"@technologiestiftung/semantic-release-config": "1.2.4",
+		"cz-conventional-changelog": "3.3.0",
+		"prettier": "3.1.0",
+		"renovate": "32.6.5"
+	},
+	"renovate-config": {
+		"default": {
+			"extends": [
+				"github>technologiestiftung/renovate-config"
+			]
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"semi": true,
+		"singleQuote": false,
+		"useTabs": true,
+		"printWidth": 80
+	}
 }
