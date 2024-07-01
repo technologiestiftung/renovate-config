@@ -21,3 +21,13 @@ or
   "baseBranches": ["staging"]
 }
 ```
+
+If you want to disable it but keep the config in your repo use this json
+
+```json
+{
+  "enabled": false,
+  "extends": ["github>technologiestiftung/renovate-config"]
+}
+```
+ 
