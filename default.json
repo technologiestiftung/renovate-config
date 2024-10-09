@@ -29,7 +29,7 @@
     },
     {
       "groupName": "devDependencies-non-major",
-      "automerge": true,
+      "automerge": false,
       "semanticCommitType": "chore",
       "semanticCommitScope": "deps",
       "matchDepTypes": ["devDependencies"],
