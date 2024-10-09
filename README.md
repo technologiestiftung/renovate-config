@@ -4,7 +4,7 @@ sharable renovate config for all our projects.
 
 ## Usage
 
-Enable renovete-bot for your repo and add the following to `renovate.json`
+Enable renovate-bot for your repo and add the following to `renovate.json`
 
 ```json
 {
