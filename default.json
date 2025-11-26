@@ -3,6 +3,7 @@
   "schedule": ["every 2 weeks on Monday before 7am"],
   "timezone": "Europe/Berlin",
   "semanticCommits": "enabled",
+  "minimumReleaseAge": "14 days",
   "lockFileMaintenance": { "enabled": false },
   "automergeType": "branch",
   "packageRules": [
